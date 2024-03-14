@@ -7,8 +7,22 @@ let num = 0;
 
 while(sum <= 50){
     num = parseInt(prompt('Inserisci un numero'));
-    array.push(num);
-    sum += num;
+    if(!isNaN(num)){
+        array.push(num);
+        sum += num;
+    }
 }
 console.log(sum);
 console.log('array,',array);
+
+/* CORREZIONE
+
+const array = [];
+let sum = 0;
+while(sum<50){
+    const newNum = parseInt(prompt('type a new number'));
+    if(!isNan(newNum)){
+        sum += newNum;
+        array.push(newNum);
+    }
+}*/
