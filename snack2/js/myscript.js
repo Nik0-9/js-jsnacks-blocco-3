@@ -5,16 +5,20 @@
     Ogni volta che ne crei uno, stampalo.
  */
 
-    let N = parseInt(prompt('Inserisci un numero'));
-    let array = [];
-
-    function arrayGen(N){
-        let array = [];
-        while(array.length<10);
-        array.push(getRndInteger(1, 100));
-        console.log(array);
-
-        return array;
+    const N = parseInt(prompt('Inserisci un numero'));
+    
+    for(let i=0; i<N ; i++){
+        console.log(arrayGen());
     }
 
-    console.log(arrayGen(array));
+    function arrayGen(){
+        let newarray = [];
+        for(let i=0; i<10; i++){
+            newarray.push(getRndInteger(1,100));
+        }
+        return newarray;
+    }
+
+    function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) ) + min;
+      }
