@@ -3,9 +3,12 @@
 
 let array = [];
 let sum = 0;
-let num= 0;
-while(sum<50){
-     num = parseInt(prompt('Inserisci un numero'));
+let num = 0;
+
+while(sum <= 50){
+    num = parseInt(prompt('Inserisci un numero'));
+    array.push(num);
     sum += num;
 }
 console.log(sum);
+console.log('array,',array);
