@@ -8,7 +8,9 @@
     const N = parseInt(prompt('Inserisci un numero'));
     
     for(let i=0; i<N ; i++){
-        console.log(arrayGen());
+        // console.log(arrayGen());
+        let array = arrayGen();
+        console.log(array); 
     }
 
     function arrayGen(){
